@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AquaVin Plumbing Services — Professional Plumber</title>
+  <meta name="description" content="Professional plumbing services — repairs, installations, 24/7 emergency calls, and maintenance." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+
+  <style>
+    :root{
+      --accent:#0b6e4f;
+      --accent-2:#0b8a66;
+      --muted:#6b7280;
+      --bg:#f7faf9;
+      --card:#ffffff;
+      --radius:14px;
+      --maxw:1100px;
+      --shadow: 0 6px 18px rgba(11,14,21,0.08);
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#eef6f2);color:#0b1220;line-height:1.5}
+
+    .container{max-width:var(--maxw);margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;color:white;font-weight:700;font-size:20px}
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{color:inherit;text-decoration:none;padding:8px 12px;border-radius:8px}
+    nav a.cta{background:var(--accent);color:white}
+    .hamburger{display:none;background:none;border:0;font-size:22px}
+    @media (max-width:860px){
+      nav{display:none}
+      .hamburger{display:block}
+    }
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin:24px 0}
+    .hero-card{background:var(--card);padding:28px;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .hero h1{margin:0 0 8px;font-size:28px}
+    .hero p.lead{color:var(--muted);margin:0 0 18px}
+    .features{display:flex;gap:12px;margin-top:12px}
+    .feature{display:flex;gap:12px;align-items:center}
+    .feature .dot{width:44px;height:44px;border-radius:10px;background:#eef7f3;display:grid;place-items:center}
+
+    .contact-card{background:linear-gradient(180deg,#fff,#f9fffb);padding:20px;border-radius:12px;border:1px solid rgba(11,14,21,0.04)}
+    .price{font-weight:700;font-size:20px;margin-top:6px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;border:0;background:var(--accent);color:white;text-decoration:none}
+    .btn-whatsapp{/* background:#25D366; */}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:22px 0}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:var(--shadow)}
+    .card h3{margin-top:8px;margin-bottom:6px}
+    @media (max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:640px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
+
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+    .gallery img{width:100%;height:160px;object-fit:cover;border-radius:10px;cursor:pointer}
+    @media (max-width:980px){.gallery{grid-template-columns:repeat(2,1fr)}}
+
+    footer{margin:44px 0 22px;color:var(--muted);font-size:14px}
+    .lightbox{position:fixed;inset:0;background:rgba(3,6,10,0.6);display:none;align-items:center;justify-content:center;padding:20px}
+    .lightbox img{max-width:100%;max-height:90vh;border-radius:10px}
+    .show{display:flex}
+    .muted{color:var(--muted)}
+
+    .founder-section{display:flex;gap:20px;align-items:center;margin-top:28px;background:var(--card);padding:20px;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .founder-section img{width:120px;height:120px;border-radius:50%;object-fit:cover}
+    @media(max-width:640px){.founder-section{flex-direction:column;align-items:flex-start}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">AV</div>
+        <div>
+          <div style="font-weight:700">AquaVin Plumbing Services</div>
+          <div style="font-size:13px;color:var(--muted)">Licensed • 24/7 Emergency • Nairobi</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#founder">Founder</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="open menu">☰</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-card">
+          <h1>Reliable plumbing services you can trust</h1>
+          <p class="lead">From emergency repairs to full bathroom installations — fast, professional, and clean work guaranteed.</p>
+
+          <div class="features">
+            <div class="feature">
+              <div class="dot">🔧</div>
+              <div>
+                <div style="font-weight:700">Emergency Repairs</div>
+                <div class="muted" style="font-size:13px">Available 24/7 — fast response</div>
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="dot">🚿</div>
+              <div>
+                <div style="font-weight:700">Installations</div>
+                <div class="muted" style="font-size:13px">Taps, showers, toilets & more</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:20px">
+            <a href="#contact" class="btn">Request a Quote</a>
+            <a href="#portfolio" style="margin-left:12px;color:var(--accent)">See Work</a>
+          </div>
+        </div>
+
+        <aside class="contact-card">
+          <div style="display:flex;align-items:center;gap:12px">
+            <div style="width:56px;height:56px;border-radius:10px;background:#fff;display:grid;place-items:center;font-weight:700">☎️</div>
+            <div>
+              <div style="font-weight:700">Call Now</div>
+              <div class="muted">+254 701 165 541</div>
+            </div>
+          </div>
+
+          <div style="margin-top:14px">
+            <div class="muted">Typical call-out from</div>
+            <div class="price">KES 1,500</div>
+            <div style="font-size:13px;color:var(--muted);margin-top:6px">Price varies by job. Free quote available.</div>
+          </div>
+
+          <div style="margin-top:14px">
+            <a href="https://wa.me/254701165541" target="_blank" class="btn btn-whatsapp">Chat on WhatsApp</a>
+          </div>
+        </aside>
+      </section>
+
+      <section id="services">
+        <h2>Services</h2>
+        <div class="grid">
+          <div class="card">
+            <div style="font-size:28px">🔩</div>
+            <h3>Leak Detection & Repair</h3>
+            <p class="muted">Fast diagnosis, non-destructive detection, permanent fixes.</p>
+          </div>
+          <div class="card">
+            <div style="font-size:28px">🚰</div>
+            <h3>Pipework & Replacements</h3>
+            <p class="muted">PVC, copper & PEX replacements; full repipes.</p>
+          </div>
+          <div class="card">
+            <div style="font-size:28px">🔁</div>
+            <h3>Bathroom Renovations</h3>
+            <p class="muted">End-to-end installs — fixtures, tiling coordination.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="gallery">
+          <img src="C:\Users\HomePC\Vinny Portfolio\images\WhatsApp Image 2025-08-11 at 12.56.29_03b42d9e.jpg" alt="project 1" />
+          <img src="C:\Users\HomePC\Vinny Portfolio\images\WhatsApp Image 2025-08-11 at 12.56.31_68d58da5.jpg" alt="project 2" />
+          <img src="C:\Users\HomePC\Vinny Portfolio\images\WhatsApp Image 2025-08-11 at 12.56.32_a6f002d7.jpg" alt="project 4" />
+          <img src="C:\Users\HomePC\Vinny Portfolio\images\WhatsApp Image 2025-08-11 at 12.59.38_88aaa428.jpg" alt="project 5">
+          <img src="C:\Users\HomePC\Vinny Portfolio\images\WhatsApp Image 2025-08-11 at 13.03.24_c34ae5c3.jpg" alt="project 6">
+        </div>
+      </section>
+
+      <section id="founder">
+        <h2>Meet the Founder</h2>
+        <div class="founder-section">
+          <img src="https://via.placeholder.com/120" alt="Vincent Omondi Ochieng">
+          <div>
+            <h3>Vincent Omondi Ochieng</h3>
+            <p class="muted">Founder & Lead Technician — With years of hands-on plumbing expertise, Vincent leads AquaVin with a passion for quality service, integrity, and customer satisfaction. Every project is treated with the same attention to detail and professionalism.</p>
+            <p>📧 Email: <a href="mailto:vo81351@gmail.com">vo81351@gmail.com</a></p>
+            <p>📞 Phone: <a href="https://wa.me/254701165541" target="_blank">+254 701 165 541</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Get in Touch</h2>
+        <p class="muted">Click below to start a conversation with Vincent directly on WhatsApp for quick assistance.</p>
+        <a href="https://wa.me/254701165541?text=Hello%20Vincent,%20I%20would%20like%20to%20inquire%20about%20your%20plumbing%20services." target="_blank" class="btn btn-whatsapp">Chat on WhatsApp</a>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© <span id="year"></span> AquaVin Plumbing Services — Licensed & Insured</div>
+        <div class="muted">Serving Nairobi and surrounds • Available 24/7</div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button id="closeLightbox" style="position:absolute;top:22px;right:22px;padding:8px;border-radius:10px;border:0;">✕</button>
+    <img src="" alt="enlarged" id="lightboxImg"/>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const ham = document.querySelector('.hamburger');
+    ham && ham.addEventListener('click', ()=>{
+      const nav = document.querySelector('nav');
+      if(nav.style.display === 'flex') nav.style.display = '';
+      else nav.style.display = 'flex';
+      nav.style.flexDirection = 'column';
+      nav.style.position = 'absolute';
+      nav.style.right = '28px';
+      nav.style.top = '72px';
+      nav.style.background = 'white';
+      nav.style.padding = '12px';
+      nav.style.borderRadius = '10px';
+      nav.style.boxShadow = '0 8px 30px rgba(4,8,14,0.08)';
+    });
+
+    const imgs = document.querySelectorAll('.gallery img');
+    const lightbox = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lightboxImg');
+    const closeLb = document.getElementById('closeLightbox');
+
+    imgs.forEach(img=>{
+      img.addEventListener('click', ()=>{
+        lbImg.src = img.src;
+        lightbox.classList.add('show');
+        lightbox.setAttribute('aria-hidden','false');
+      })
+    });
+    closeLb.addEventListener('click', ()=>{
+      lightbox.classList.remove('show');
+      lightbox.setAttribute('aria-hidden','true');
+    });
+    lightbox.addEventListener('click', (e)=>{
+      if(e.target === lightbox) {
+        lightbox.classList.remove('show');
+        lightbox.setAttribute('aria-hidden','true');
+      }
+    });
+  </script>
+</body>
+</html>
